@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WiFi Scanner</title>
+  <link rel="stylesheet" href="/static/index.css"/>
+</head>
+<h2>Test je verbinding</h2>
+<body>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type=text/javascript>
+		$(function() {
+			$('#startscan').on('click', function(e) {
+				$.getJSON('/startscan',	function(data) {
+				//do nothing
+            			});
+            		return false;
+          		});
+        	});
+	</script>
+
+<div class='container'>
+        <form>
+            <a href=#startscan id=startscan><button class='button'>Start Scan</button></a>
+        </form>
+
+</div>
+</body>
+</html>
